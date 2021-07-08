@@ -14,5 +14,19 @@
     # What was the name of the function we have seen which changes the case of a string?  Use your CLI to access the Python documentation and get help(str).
     
 def endsPy(input):
-    return True
+    input_list = []
+    for x in input:
+        input_list.append(x)
+    
+    #length/size of the list
+    s = len(input_list)
+    
+    if input_list[s-1] == "y" or input_list[s-1] == "Y":
+        if input_list[s-2] == "p" or input_list[s-2] == "P":
+            return True
+        else:
+            return False
+    else: 
+        return False
+
     
